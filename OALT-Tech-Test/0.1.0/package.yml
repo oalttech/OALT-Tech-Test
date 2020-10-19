@@ -1,6 +1,20 @@
 # Simple package
 
-name: OALT
+name: OALT-Tech-Test
 parent: default
 
 matches:
+  - trigger: ":dlimeetcategory"
+    replace: |
+              OALT HUB
+              >
+              Hardware
+              >
+              Software
+              >
+              HIVE
+              >
+              Key Meetings
+              >
+              New & Interesting
+              >s
