@@ -4,17 +4,16 @@ name: OALT-Tech-Test
 parent: default
 
 matches:
-  - trigger: ":dlimeetcategory"
-    replace: |
-              OALT HUB
-              >
-              Hardware
-              >
-              Software
-              >
-              HIVE
-              >
-              Key Meetings
-              >
-              New & Interesting
-              >
+  - trigger: ":meetingtopic"
+    form: |
+        {{choices}}
+    form_fields:
+      choices:
+        type: list
+        values:
+          - OALT HUB
+          - Hardware
+          - Software
+          - HIVE
+          - Key Meetings
+          - New & Interesting
